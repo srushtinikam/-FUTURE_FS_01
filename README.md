@@ -4,3 +4,45 @@ The website is fully responsive, meaning it works seamlessly on desktop, tablet,
 The portfolio includes sections like Home, About Me, Skills, Projects, and Contact. Each project listed features details like the project description, the technologies used, and links to both the GitHub repository and the live demo (if available).
 This project helps me represent myself professionally to recruiters, clients, and anyone interested in my work. The website is deployed online using Vercel or Netlify for easy accessibility. It’s also optimized for performance and SEO to ensure good visibility on search engines.
 This portfolio will be regularly updated as I gain more experience and skills.
+
+
+# 💼 Personal Portfolio Website
+
+This is my personal portfolio website built with **React.js**. It showcases my skills, projects, and resume.
+
+## 🚀 Live Demo
+👉 Coming Soon...  
+
+## 🔧 Tech Used
+- React.js
+- HTML5, CSS3
+- EmailJS (for contact form)
+- Vercel / Netlify (Deployment)
+
+## 📦 Installation
+```bash
+git clone https://github.com/srushtinikam/portfolio.git
+cd portfolio
+npm install
+npm start
+
+✨ Features
+Responsive design 
+
+Projects showcase
+
+Resume download
+
+Contact form with email support
+
+Live online deployment
+
+📬 Contact
+Email: srushtinikamcse@gmail.com
+
+LinkedIn: Srushti Nikam
+
+GitHub: srushtinikam
+
+📝 License
+Open-source for learning. Feel free to use and modify.
