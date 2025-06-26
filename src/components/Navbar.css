@@ -1,0 +1,110 @@
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: navbarSlide 1s ease forwards;
+  opacity: 0;
+}
+
+/* Navbar Slide Down Animation */
+@keyframes navbarSlide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Logo */
+.logo {
+  color: #00d9ff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+/* Nav Links Animation */
+.nav-links li {
+  opacity: 0;
+  animation: linkFade 0.8s ease forwards;
+}
+
+.nav-links li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.nav-links li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.nav-links li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.nav-links li:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+@keyframes linkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Nav Link Styling */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #00d9ff;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00d9ff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}

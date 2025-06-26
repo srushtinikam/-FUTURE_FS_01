@@ -1,0 +1,88 @@
+
+/* Resume Section */
+.resume-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  animation: fadeIn 2s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading Styling */
+.resume-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.resume-heading span {
+  color: #ffd700;
+}
+
+/* Animated underline */
+.resume-heading::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #ffd700;
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+  animation: underlineSlide 2s infinite alternate;
+}
+
+@keyframes underlineSlide {
+  from {
+    width: 80px;
+    background-color: #ffd700;
+  }
+  to {
+    width: 140px;
+    background-color: #00d9ff;
+  }
+}
+
+/* Text Description */
+.resume-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+/* Download Button Styling */
+.download-button {
+  padding: 12px 30px;
+  background-color: #00d9ff;
+  color: #1f1f1f;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+}
+
+.download-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,77 @@
+
+/* About.css */
+
+.about-section {
+  background: linear-gradient(135deg, #f0ed59, #092b7b);
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #3498db;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4d4d4d;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.skills-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-item {
+  background-color: #2fbafa;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #f5fb8c;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-section {
+    padding: 2rem 1rem;
+  }
+}
